@@ -5,8 +5,11 @@ import "./HomeView.css";
 import React from "react";
 import {Link} from 'react-router-dom'
 export default props => {
+  const {state,onClick} =props
   return (
-    <div className="home-wrapper">
+    <div>
+      <div onClick={()=>{onClick()}}>点我</div>
+      <div>{JSON.stringify(state)}</div>
       <ul>
         <li>
           <Link to={'/Page01'}>Page01</Link>

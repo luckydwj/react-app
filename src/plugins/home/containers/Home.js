@@ -5,10 +5,11 @@ import React from "react";
 import { connect } from "react-redux";
 import HomeView from "../components/HomeView";
 import { add } from "../index.action";
+import key from '../key'
 
 const mapStateToProps = state => {
   return {
-    state
+    state:state[key.ID]
   };
 };
 const mapDispatchToProps = dispatch => {
