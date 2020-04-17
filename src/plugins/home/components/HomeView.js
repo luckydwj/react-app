@@ -3,16 +3,24 @@
  */
 import "./HomeView.css";
 import React from "react";
+import {Link} from 'react-router-dom'
 export default props => {
   return (
     <div className="home-wrapper">
-      <div className="nav">
-        <div>Tab1</div>
-        <div>Tab2</div>
-        <div>Tab3</div>
-        <div>Tab4</div>
-      </div>
-      <div className="content">content</div>
+      <ul>
+        <li>
+          <Link to={'/Page01'}>Page01</Link>
+        </li>
+        <li>
+          <Link to={'/Page02'}>Page02</Link>
+        </li>
+        <li>
+          <Link to={'/Page03'}>Page03</Link>
+        </li>
+        <li>
+          <Link to={'/Page04'}>Page04</Link>
+        </li>
+      </ul>
     </div>
   );
 };

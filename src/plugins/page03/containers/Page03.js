@@ -3,7 +3,7 @@
  */
 import React from 'react'
 import {connect} from 'react-redux'
-import Page02View from '../components/Page02View'
+import Page03View from '../components/Page03View'
 import { add } from '../../home/index.action'
 const mapStateToProps = state => {
   return {
@@ -15,4 +15,4 @@ const mapDispatchToProps = dispatch => {
     onClick: () => dispatch(add("我是page02页面"))
   };
 };
-export default connect(mapStateToProps,mapDispatchToProps)(Page02View)
+export default connect(mapStateToProps,mapDispatchToProps)(Page03View)

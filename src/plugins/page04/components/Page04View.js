@@ -6,6 +6,6 @@ import React from 'react'
 export default (props)=>{
   return <div>
     <div style={{cursor:'pointer'}} onClick={()=>{props.history.goBack()}}>返回</div>
-    Page03
+    Page04
   </div>
 }
