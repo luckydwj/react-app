@@ -12,16 +12,16 @@ export default props => {
       <div>{JSON.stringify(state)}</div>
       <ul>
         <li>
-          <Link to={'/Page01'}>Page01</Link>
+          <Link to={'/page01'}>Page01</Link>
         </li>
         <li>
-          <Link to={'/Page02'}>Page02</Link>
+          <Link to={'/page02'}>Page02</Link>
         </li>
         <li>
-          <Link to={'/Page03'}>Page03</Link>
+          <Link to={'/page03'}>Page03</Link>
         </li>
         <li>
-          <Link to={'/Page04'}>Page04</Link>
+          <Link to={'/page04'}>Page04</Link>
         </li>
       </ul>
     </div>

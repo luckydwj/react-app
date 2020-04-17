@@ -13,10 +13,7 @@ class Plugins {
     return this._instance
   }
   mount(plugin){
-    const obj=this.plugins.find(p=>(plugin.id===p.id || plugin.path===p.path))
-    if(!obj){
-      this.plugins=this.plugins.concat(plugin)
-    }
+    this.plugins=this.plugins.concat(plugin)
     return this
   }
   getReducers(){

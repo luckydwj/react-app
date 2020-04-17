@@ -6,10 +6,10 @@ import initRoutes from '../definitions/routes'
 import initStore from '../definitions/store'
 function initApp () {
   app.mount(require('./home').default)
-    .mount(require('./page01').default)
-    .mount(require('./page02').default)
-    .mount(require('./page03').default)
-    .mount(require('./page04').default)
+   .mount(require('./page01').default)
+   .mount(require('./page02').default)
+   .mount(require('./page03').default)
+  .mount(require('./page04').default)
 }
 const start =() =>{
     initApp()
