@@ -7,16 +7,18 @@ import {Link} from 'react-router-dom'
 import EnhanceConnect from '../../../definitions/EnhanceConnect'
 import key from '../key'
 import {add} from '../index.action'
-@EnhanceConnect((states=>{
-  text:states[key.ID].text
-}),{add})
+@EnhanceConnect((states)=>{
+ return {
+   text:states[key.ID].text
+ }
+},{add})
 class Home extends PureComponent{
   render(){
-      const {state,onClick} =this.props
+      const {text,add} =this.props
       return (
         <div>
-          <div onClick={()=>{onClick()}} style={{cursor:'pointer'}}>点我</div>
-          <div>{JSON.stringify(state)}</div>
+          <div onClick={()=>{add('我被点击拉')}} style={{cursor:'pointer'}}>点我</div>
+          <div>{JSON.stringify(text)}</div>
           <ul>
             <li>
               <Link to={'/page01'}>Page01</Link>
