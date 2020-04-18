@@ -4,11 +4,12 @@
 import "./HomeView.css";
 import React from "react";
 import {Link} from 'react-router-dom'
+
 export default props => {
   const {state,onClick} =props
   return (
     <div>
-      <div onClick={()=>{onClick()}}>点我</div>
+      <div onClick={()=>{onClick()}} style={{cursor:'pointer'}}>点我</div>
       <div>{JSON.stringify(state)}</div>
       <ul>
         <li>

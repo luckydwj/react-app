@@ -3,7 +3,8 @@
  */
 import { combineReducers } from "redux";
 import app from './app'
-export function createReducer (initialState,handlers) {
+
+export function createReducer (initialState='',handlers) {
   return function reducer(state=initialState,action) {
     if(handlers.hasOwnProperty(action.type)){
       return handlers[action.type](state,action)
@@ -12,6 +13,7 @@ export function createReducer (initialState,handlers) {
     }
   }
 }
+
 export default function(){
   const reducers=app.getReducers()
   let r={}
